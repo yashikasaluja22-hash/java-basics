@@ -1,11 +1,18 @@
 
 public class Introjava2 {
-        public static void main(String[] args) {
-            System.out.println("Hello world");
-            System.out.println(args[0]);//will print the 0 index of String[] array
-            //input will be given in command line
+    public static void main(String[] args) {
+
+        System.out.println("Hello world");
+
+        if (args.length > 0) {
+            System.out.println(args[0]);
+        } else {
+            System.out.println("No command line arguments provided.");
         }
     }
+}//will print the 0 index of String[] array
+            //input will be given in command line
+
 /* 1. ur java program looks for main function whatever is ur file or code ur first function
 shud be main only, main function is like entry point for java code
 
