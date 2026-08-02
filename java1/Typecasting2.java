@@ -27,6 +27,7 @@ public class Typecasting2 {
         System.out.println(3 * 6.17);//will give output in float (typecasting)
 
         // SHORT dtatype: used to store small inetegers upto 32,768 , memmory = 2 bytes
+        short num2 = 456;
 
     }
 }
