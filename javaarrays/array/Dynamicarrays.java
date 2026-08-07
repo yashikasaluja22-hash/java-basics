@@ -37,4 +37,5 @@ public class Dynamicarrays {
         System.out.println(arr2);
 
     }
-}
+}//ArrayList mein we use --> arr.size()
+//for normal arrays we use --> arr.length
