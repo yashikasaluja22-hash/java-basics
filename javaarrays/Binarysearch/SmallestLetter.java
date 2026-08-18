@@ -16,4 +16,5 @@ public class SmallestLetter {
         }
         return letters[start % letters.length];
     }
-}
+}//as Binary Search takes O(log n) time --> so this is time comlpexity here
+//SC = O(1)
