@@ -18,3 +18,15 @@ public class SmallestLetter {
     }
 }//as Binary Search takes O(log n) time --> so this is time comlpexity here
 //SC = O(1)
+
+/* public char nextGreatestLetter(char[] letters, char target) {
+    for (char letter : letters) {
+        if (letter > target) {
+            return letter;
+        }
+    }
+
+    // If no letter is greater, wrap around
+    return letters[0];
+} TC = O(N) & this is brute sol for above problem
+*/
