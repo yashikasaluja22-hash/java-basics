@@ -26,4 +26,4 @@ public class Ceiling {
         }
         return start;
     }
-}
+}// TC = O(log N) //optimal sol : binary search wala

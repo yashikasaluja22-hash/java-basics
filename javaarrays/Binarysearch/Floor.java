@@ -25,5 +25,5 @@ public class Floor{
             }
         }
         return end;
-    }
+    }//TC = O(Log N)
 }
