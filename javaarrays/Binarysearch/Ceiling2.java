@@ -13,5 +13,5 @@ public class Ceiling2 {
             }
         }
         return -1;
-    }
+    } // TC = O(N) & SC = O(1)
 }
