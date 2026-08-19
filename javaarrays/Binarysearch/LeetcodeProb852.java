@@ -1,6 +1,7 @@
 package Binarysearch;
 //we dont have a target in this problem
 //only find the moutain index of array
+//this is also solution to LeetCode Prob 162
 public class LeetcodeProb852 {
     public static void main(String[] args) {
        int[] arr = {0,1,3,5,7,4,3,2};
