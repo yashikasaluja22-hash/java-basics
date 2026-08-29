@@ -1,5 +1,5 @@
 package Binarysearch;
-
+import java.util.Arrays;
 public class BSin2dmatrixs {
     public static void main(String[] args) {
             int[][] arr = {{10, 20, 30, 40},
@@ -7,7 +7,7 @@ public class BSin2dmatrixs {
                     {28, 29, 37, 49},
                     {33, 34, 38, 50}};
             int target = 37;
-            BSin2dmatrix(arr, target);
+            System.out.println(Arrays.toString(BSin2dmatrix(arr, target)));
     }
 
     public static int[] BSin2dmatrix(int[][] arr, int target) {
