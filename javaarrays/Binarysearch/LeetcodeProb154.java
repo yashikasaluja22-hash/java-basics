@@ -1,3 +1,5 @@
+package Binarysearch;
+
 public class LeetcodeProb154 {
     class Solution {
         public int findMin(int[] nums) {
