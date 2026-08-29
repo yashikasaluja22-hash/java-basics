@@ -11,7 +11,7 @@ public class BinarySearchinMatrix {
 
             int rStart = 0;
             int rEnd = rows - 1;
-            int cMid = (cols - 1)/2;
+            int cMid = cols/2;
             //run the loop till 2 rows are remaining
             while(rStart < (rEnd - 1)){
                 int mid = rStart + (rEnd - rStart)/2;
@@ -48,7 +48,7 @@ public class BinarySearchinMatrix {
 
 
         //to apply binary search in a single row which is like an array
-        public static int[] binarySearch(int[] matrix, int row, int cStart, int cEnd, int target){
+        public static int[] binarySearch(int[][] matrix, int row, int cStart, int cEnd, int target){
             while(cStart <= cEnd){
                 int mid = cStart + (cEnd - cStart)/2;
                 if(matrix[row][mid] == target){
