@@ -17,3 +17,10 @@ class Student{
  }
 }
 }
+/* primitive types are the basic built-in
+ data types used to store simple values such as numbers, characters, and true/false values.
+ eg: boolean, short, int, long, float, double, char, byte.
+
+ we do not use the new keyword with primitive data types.
+ no new is needed because primitives store the actual value directly.
+*/
