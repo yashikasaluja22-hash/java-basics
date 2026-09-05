@@ -5,6 +5,7 @@ class Shapes{
 }
 //this is heirarchical inheritance
 class Circle extends Shapes{
+    @Override //u can even remove this keyword, as it will be still be called internally
     void area(){
      System.out.println("i m in Circle");
     }
@@ -32,5 +33,8 @@ public class inherit2 {
         circle.area();
         rectangle.area();
         square1.area();
+
+        Shapes circle2 = new Circle();
+        circle2.area();
     }
 }
