@@ -1,3 +1,5 @@
+//this is an example of constructor overloading
+//under compile - time polymorphism
 class Box {
     double l;
     double h;
