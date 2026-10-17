@@ -8,7 +8,7 @@ public class SortedRotatedArray {
                 }
             }
             return flag <= 1;
-        }
+        }//TC = O(N), SC = O(1)
     }
 //sorted rotated array means pehle sorted and then rotated
 }
