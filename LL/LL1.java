@@ -94,6 +94,30 @@ public class LL1 {
         return temp;
     }
 
+    public int deleteAtPosition(int index){
+     if(index == 0){
+         deleteFirst();
+     }
+     if(index == size - 1){
+         deleteLast();
+     }
+     Node prev = get(index - 1);
+     int val = prev.next.value;
+     prev.next = prev.next.next;
+
+     return val;
+    }
+
+    public Node find(int value){
+        Node node = head;
+        while(node != null){
+            if(node.value == value){
+                return node;
+            }
+            node = node.next;
+        }
+        return null;
+    }
 
     private class Node{
         private int value;

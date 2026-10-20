@@ -14,6 +14,10 @@ public class Main11 {
 
        System.out.println(list.deleteLast());
 
+       System.out.println(list.deleteAtPosition(1));
+
         list.display();
+
+        list.find(3);
     }
 }
