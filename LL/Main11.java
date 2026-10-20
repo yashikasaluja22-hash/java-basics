@@ -8,6 +8,12 @@ public class Main11 {
 
         list.insertLast(99);
 
+        list.insertAtPosition(100, 3);
+
+       System.out.println(list.deleteFirst());
+
+       System.out.println(list.deleteLast());
+
         list.display();
     }
 }

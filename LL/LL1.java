@@ -1,3 +1,5 @@
+import static java.lang.reflect.Array.get;
+
 public class LL1 {
 
     //every linked list has a head and a tail::
@@ -41,6 +43,57 @@ public class LL1 {
         tail = newNode;
         size++;
     }
+
+    public void insertAtPosition(int value, int index){
+        if (index == 0){
+            insertAtFirst(value);
+        }
+        if(index == size){
+            insertLast(value);
+        }
+
+        Node temp = head;
+        for(int i = 1; i < index; i++){
+            temp = temp.next;
+        }
+        Node newNode = new Node(value, temp.next); //calling diff constructor this time
+        temp.next = newNode;
+        size++;
+    }
+
+    public int deleteFirst(){
+        int val = head.value;
+        head = head.next;
+        if(head == null){
+            tail = null;
+        }
+        size--;
+        return val;
+    }
+
+    public int deleteLast(){
+      if(size <= 1){
+          deleteFirst();
+      }
+        int val = tail.value;
+        Node secondlast = get(size - 2);
+        tail = secondlast;
+
+        tail.next = null;
+        size--;
+        return val;
+    }
+
+    private Node get(int i) {
+        Node temp = head;
+
+        for (int index = 0; index < i; index++) {
+            temp = temp.next;
+        }
+
+        return temp;
+    }
+
 
     private class Node{
         private int value;
