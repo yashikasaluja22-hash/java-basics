@@ -30,6 +30,18 @@ public class LL1 {
         System.out.println("END!");
     }
 
+    public void insertLast(int value){
+        if(tail == null){
+            insertAtFirst(value);
+            return;
+        }
+
+        Node newNode = new Node(value);
+        tail.next = newNode;
+        tail = newNode;
+        size++;
+    }
+
     private class Node{
         private int value;
         private Node next;
